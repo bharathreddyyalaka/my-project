@@ -11,5 +11,15 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+
+        stage('deploy'){
+            steps{
+                sh '''
+                   cd terraform
+                   terraform init
+                   terraform apply -var-file=dev.tfvars -auto-approve
+                '''
+            }
+        }
     }
 }
