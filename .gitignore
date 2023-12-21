@@ -6,3 +6,4 @@
 /terraform/.terraform.lock.hcl
 .DS_Store
 /output/lambda_function_payload.zip
+dependency-reduced-pom.xml
