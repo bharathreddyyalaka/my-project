@@ -9,9 +9,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                def mvnHome = tool 'Maven 3.9.6'
-                sh "${mvnHome}/bin/mvn clean install"
-                //sh 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
