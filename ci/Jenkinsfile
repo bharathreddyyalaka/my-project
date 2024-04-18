@@ -3,7 +3,7 @@
 pipeline {
     agent  any
     tools{
-        maven 'Maven'
+        maven 'Maven 3.9.6'
     }//{ docker { image 'maven:3.9.6-eclipse-temurin-17-alpine' } }
 //     environment{
 //        // PATH = "/opt/homebrew/Cellar/maven/3.9.6/libexec/bin:/opt/homebrew/Cellar/terraform/1.6.6/bin:$PATH"
