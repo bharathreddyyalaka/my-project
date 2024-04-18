@@ -1,7 +1,10 @@
 //Jenkinsfile (Declarative Pipeline)
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent  any//{ docker { image 'maven:3.9.6-eclipse-temurin-17-alpine' } }
+    agent  any
+    tools{
+        maven 'Maven'
+    }//{ docker { image 'maven:3.9.6-eclipse-temurin-17-alpine' } }
 //     environment{
 //        // PATH = "/opt/homebrew/Cellar/maven/3.9.6/libexec/bin:/opt/homebrew/Cellar/terraform/1.6.6/bin:$PATH"
 //
